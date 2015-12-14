@@ -26,7 +26,7 @@ public class Http {
             server.createContext("/", new MyHandler());
             server.setExecutor(null);
         } catch (IOException e) {
-            throw new IllegalStateException("Failed to create HTTP server");
+            throw new IllegalStateException("Failed to create HTTP server", e);
         }
     }
 
