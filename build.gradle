@@ -17,7 +17,7 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "3.0"
+version = "3.1"
 group= "io.github.jikuja.troubleshootingmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "troubleshootingmod"
 
@@ -40,6 +40,9 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
+    compile "org.openjdk.jmh:jmh-core:1.11.2"
+    compile "org.openjdk.jmh:jmh-generator-annprocess:1.11.2"
+    compile "org.openjdk.jmh:jmh-java-benchmark-archetype:1.11.2"
 }
 
 processResources
